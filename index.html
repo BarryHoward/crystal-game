@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crystal-Collector-Game</title>
+
+  <style type="text/css">
+
+    .crystal-image {
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+
+</head>
+<body>
+  <h1>Crystal-Collector-Game!</h1>
+
+  <h2 >Rules of the Game</h2>
+  <p>You will be given a random number at the start of the game.  There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.  You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
+  <p>The value of each crystal is hidden from you until you click on it.  Each time when the game starts, the game will change the values of each crystal.</p>
+  
+  <br>
+  <div class="row, container">
+  
+  <h3 class="col-sm-3">Number to Guess: 
+    <span id="number-to-guess"></span> 
+  </h3>
+  <h3 class="col-sm-2 ">Your Score: 
+    <span id='yourScore'>0</span>
+  </h3>
+  <br>
+
+  <!-- Note that this div is now empty. We will fill it dynamically -->
+  <div id="crystals">
+  </div>
+
+  <!-- JAVASCRIPT  -->
+  <!-- ========================================= -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="assets/javascript/game.js">
+
+  </script>
+</body>
+</html>
