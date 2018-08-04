@@ -1,5 +1,8 @@
+function getRandomValue (a, b){
+  return Math.floor((Math.random() * a) + b);
+}
 
-  var targetNumber = 53;
+  var targetNumber = getRandomValue(20, 60);
 
   $("#number-to-guess").text(targetNumber);
 
@@ -43,10 +46,11 @@
     crystalValue = parseInt(crystalValue);
     // We then add the crystalValue to the user's "counter" which is a global variable.
     // Every click, from every crystal adds to the global counter.
-    counter += crystalValue;
 
+    counter += crystalValue;
+    $("#yourScore").text(counter);
     // All of the same game win-lose logic applies. So the rest remains unchanged.
-    alert("New score: " + counter);
+    // alert("New score: " + counter);
 
     if (counter === targetNumber) {
       alert("You win!");
